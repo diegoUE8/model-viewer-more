@@ -1,0 +1,9 @@
+{
+  "name": "AR Viewer",
+  "version": "1.0.0",
+  "description": "Simple web page AR",
+  "main": "index.html",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+	<title>AR MORE</title>
+	<meta charset="UTF-8" />
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta name="description" content="&lt;model-viewer&gt; template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="./styles.css" rel="stylesheet"/>
+
+  <script src="script.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module"src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+</head>
+
+<body class="w-100 sans-serif bg-white" style="background-color:rgb(207, 207, 207);">
+
+<!-- Use it like any other HTML element -->
+<model-viewer 
+              alt="Neil Armstrong" 
+              src="https://raw.githubusercontent.com/diegoUE8/b-here-vercel/id4ex/docs/models/NeilArmstrong.glb" 
+              ios-src="https://raw.githubusercontent.com/diegoUE8/b-here-vercel/id4ex/docs/models/NeilArmstrong.usdz"
+              skybox-image="https://raw.githubusercontent.com/diegoUE8/b-here-vercel/id4ex/docs/textures/background/neutral.jpg" 
+              environment-image="https://raw.githubusercontent.com/diegoUE8/b-here-vercel/id4ex/docs/textures/envMap/studio.hdr" 
+              auto-rotate 
+              camera-controls
+              ar ar-modes="webxr scene-viewer quick-look" 
+              ar-scale="auto" magic-leap unstable-webxr>
+
+              <article class="article">
+                <h1><img src="logo.png"width="200" height="100"></h1>
+                <p>
+                   An example of model viewer for augmented reality.
+                </p>
+              </article>
+
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+              </button>
+              <div id="ar-prompt">
+                <img src="ar_hand_prompt.png">
+              </div>
+</model-viewer>
+
+</body>
+
+</html>
